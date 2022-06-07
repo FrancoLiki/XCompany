@@ -9,7 +9,6 @@
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
     <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <enlace href="https: //fonts.googleapis.com/css2? family= Roboto:wght@300;500 & display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav> 
@@ -35,23 +34,33 @@
     </nav>
     <main>
         <section class="contacto">
-            <form class="contacto__formulario" action="get">
-                <input type="text" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y apellido">
-                <br>
-                <input type="email" name="email" id="email" placeholder="email">
-                <br>
-                <input type="number" name="numero" id="numerodetelefono" placeholder="Numero de telefono">
-                <br>
-                <textarea name="texto" id="texto" cols="60" rows="10" placeholder="Deje su consulta, muchas gracias por contactarnos"></textarea>
-                <br>
-                <input type="reset" value="borrar">
-                <input type="submit" value="enviar">
-            </form>
             <div class="contacto__div">
-                <p class="contacto__parrafo"> Para una mayor facilidad y practicidad en su compra, descarga nuestra aplicación disponibles para ambos sitemas. </p>
-                <a href="https://play.google.com/store?hl=es_AR&gl=US" target="_blank"> <img class="contacto__android" src="../imagenes/frame (1).png" alt="codigo qr"></a>
-                <a href="https://www.apple.com/la/app-store/" target="_blank"> <img class="contacto__ios" src="../imagenes/frame.png" alt="codigo qr"> </a> 
+                <div class="contacto__contenedorParrafo">
+                    <p class="contacto__parrafo"> Para una mayor facilidad y practicidad en su compra, descarga nuestra aplicación disponibles para ambos sitemas, asimismo podrá realizar la compra por dicha aplicación. </p>
+                </div>
+                <div class="contacto__contenedorQR">
+                    <a href="https://play.google.com/store?hl=es_AR&gl=US" target="_blank"> <img class="contacto__android" src="../imagenes/frame (1).png" alt="codigo qr"></a>
+                    <a href="https://www.apple.com/la/app-store/" target="_blank"> <img class="contacto__ios" src="../imagenes/frame.png" alt="codigo qr"> </a>
+                </div> 
             </div>
+            <div class="contacto__formularioDiv">
+                <div>
+                    <img class="contacto__imagen" src="../imagenes/message.png" alt="carta de foto">
+                </div>
+                <form class="contacto__formulario" action="get">
+                    <input class="contacto__imput" type="text" name="nombreyapellido" id="nombreyapellido" placeholder="Nombre y apellido">
+                    <br>
+                    <input class="contacto__imput" type="email" name="email" id="email" placeholder="email">
+                    <br>
+                    <input class="contacto__imput" type="number" name="numero" id="numerodetelefono" placeholder="Numero de telefono">
+                    <br>
+                    <textarea class="contacto__textarea" name="texto" id="texto" cols="60" rows="10" placeholder="Deje su consulta, muchas gracias por contactarnos"></textarea>
+                    <br>
+                    <input class="contacto__boton" type="reset" value="borrar">
+                    <input class="contacto__boton" type="submit" value="enviar">
+                </form>
+            </div>
+            
         </section>
     </main>
     <footer>
@@ -75,6 +84,5 @@
             </ul>
         </div>
     </footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

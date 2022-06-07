@@ -9,7 +9,6 @@
     <enlace rel="preconectar" href="https://fonts.googleapis.com">
     <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <enlace href="https: //fonts.googleapis.com/css2? family= Roboto:wght@300;500 & display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -33,32 +32,33 @@
             </ul>
         </section>
     </nav>
-    <main>
-        <h1 class="h1catalogoverano"> CATALOGO VERANO </h1>
-        <ul class="listaseccionesverano">
-            <li class="listaseccionesverano__item">
-                <a class="listaseccionesverano__link" href="#SECCIONREMERAS"> Remeras </a>
-            </li>
-            <li class="listaseccionesverano__item">
-                <a class="listaseccionesverano__link" href="#SECCIONPANTALON"> Pantalon </a>
-            </li>
-        </ul>
+    <main id="CatalogoVerano">
+        <section class="ListaCatalogoVerano">
+            <div class="ListaCatalogoVerano__divh1">
+                <h1 class="ListaCatalogoVerano__h1"> CATALOGO VERANO </h1>
+            </div>
+            <ul class="ListaCatalogoVerano__ul">
+                <li class="ListaCatalogoVerano__item">
+                    <a class="ListaCatalogoVerano__link" href="#SECCIONREMERAS"> Remeras </a>
+                </li>
+                <li class="ListaCatalogoVerano__item">
+                    <a class="ListaCatalogoVerano__link" href="#SECCIONPANTALON"> Pantalon </a>
+                </li>
+            </ul>
+        </section>
         <!-- inicia seccion remeras -->
+        <h2 class="h2catalogoverano"> SECCIÓN REMERAS </h2>
         <section id="SECCIONREMERAS">
-            <h2 class="h2catalogoverano"> SECCIÓN REMERAS </h2>
             <article class="articuloRemera">
                 <ul class="articuloRemera__lista">
                     <li class="articuloRemera__item">
                         <img class="articuloRemera__imagen" src="../imagenes/remera1.jpg" alt="remera">
-                        <h3 class="articuloRemera__h3"> Remera </h3>
                     </li>
                     <li class="articuloRemera__item">
                         <img class="articuloRemera__imagen" src="../imagenes/remera2.jpg" alt="remera">
-                        <h3 class="articuloRemera__h3"> Remera </h3>
                     </li>
                     <li class="articuloRemera__item">
                         <img class="articuloRemera__imagen" src="../imagenes/remera3.jpg" alt="remera">
-                        <h3 class="articuloRemera__h3"> Remera </h3>
                     </li>
                 </ul>
             </article>
@@ -66,48 +66,41 @@
                 <ul class="articuloRemera__lista">
                     <li class="articuloRemera__item">
                         <img class="articuloRemera__imagen" src="../imagenes/remera4.jpg" alt="remera">
-                        <h3 class="articuloRemera__h3"> Remera </h3>
                     </li>
                     <li class="articuloRemera__item">
                         <img class="articuloRemera__imagen" src="../imagenes/remera5.jpg" alt="remera">
-                        <h3 class="articuloRemera__h3"> Remera </h3>
                     </li>
                     <li class="articuloRemera__item">
                         <img class="articuloRemera__imagen" src="../imagenes/remera6.jpg" alt="remera">
-                        <h3 class="articuloRemera__h3"> Remera </h3>
                     </li>
                 </ul>
             </article>
         </section>
         <!-- Finaliza seccion remeras -->
         <!-- inicia seccion pantalones -->
-         <section id="SECCIONPANTALON">
-             <h2 class="h2catalogoverano"> SECCION PANTALONES </h2>
-             <article class="articuloPantalonesCorto">
+        <h2 class="h2catalogoverano"> SECCION PANTALONES </h2>
+        <section id="SECCIONPANTALON">
+            <article class="articuloPantalonesCorto">
                 <ul class="articuloPantalonesCorto__lista">
                     <li class="articuloPantalonesCorto__item">
                         <img class="articuloPantalonesCorto__imagen" src="../imagenes/pantaloncorto1.jpg" alt="pantalon">
-                        <h3 class="articuloPantalonesCorto__h3"> Pantalon </h3>
                     </li>
                     <li class="articuloPantalonesCorto__item">
                         <img class="articuloPantalonesCorto__imagen" src="../imagenes/pantaloncorto2.jpg" alt="pantalon">
-                        <h3 class="articuloPantalonesCorto__h3"> Pantalon </h3>
                     </li>
                 </ul>
             </article>
             <article class="articuloPantalonesCorto">
-                <ul>
+                <ul class="articuloPantalonesCorto__lista">
                     <li class="articuloPantalonesCorto__item">
                         <img class="articuloPantalonesCorto__imagen" src="../imagenes/pantaloncorto3.jpg" alt="pantalon">
-                        <h3 class="articuloPantalonesCorto__h3"> Pantalon </h3>
                     </li>
                     <li class="articuloPantalonesCorto__item">
                         <img class="articuloPantalonesCorto__imagen" src="../imagenes/pantaloncorto4.jpg" alt="pantalon">
-                        <h3 class="articuloPantalonesCorto__h3"> Pantalon </h3>
                     </li>
                 </ul>
-             </article>
-         </section>
+            </article>
+        </section>
          <!-- Finaliza seccion pantalones -->
     </main>
     <footer>
@@ -131,6 +124,5 @@
             </ul>
         </div>
     </footer>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>
