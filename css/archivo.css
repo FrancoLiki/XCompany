@@ -1086,72 +1086,23 @@ footer {
 }
 
 .contacto__formularioDiv {
-    background-color: var(--Secundario);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 2.5em;
     align-items: center;
-    width: 70%;
-    height: 70em;
-    margin: auto;
-    border-radius: 25em;
-    border: solid #414042 0.8em;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto 5em;
+    color: #BCBCBE !important;
 }
 
-.contacto__imagen{
-    width: 30em;
-    margin: 0 0 5em 8em;
-    background-color: var(--Letras);
-    border-radius: 9em;
-    border: solid #414042 0.8em;
-    padding: 2em;
+.titulo-h2-formulariocontaco {
+    font-size: 3.5em;
 }
 
-.contacto__formulario {
-    width: 25em;
-    text-align: center;
-    padding: 8em;
-    margin: 0 25em 0 0;
-}
-
-.contacto__imput{
-    width: 32em;
-    height: 1.4em;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 0.5em;
-    margin: 0.4em 5em 0.4em 0;
-    opacity: 0.5;
-    color: #414042;
-    border: none;
-    border-bottom: solid #414042 0.4em;
-    border-bottom-right-radius: 1.2em;
-    border-bottom-left-radius: 1.2em;
-}
-
-.contacto__textarea{
-    width: 34em;
-    height: 14em;
-    margin: 0.4em 5em 0.4em 0;    
-    font-size: 1.5em;
+.textarea-contacto {
     resize: none;
-    opacity: 0.5;
-    color: #414042;
-    border: none;
-    border-bottom: solid #414042 0.4em;
-    border-bottom-right-radius: 1.5em;
-    border-bottom-left-radius: 1.5em;
-}
-
-.contacto__boton {
-    min-width: 8em;
-    height: 4em;
-    border-radius: 2em;
-    font-size: 1.4em;
-    opacity: 0.5;
-    color: #414042;
-    border: solid #414042 0.4em;
-    text-align: center;
-}
+} 
 
 @media screen and (max-width: 1660px) {
     .contacto__formularioDiv {
@@ -1167,6 +1118,11 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+
+    .titulo-h2-formulariocontaco {
+        font-size: 2.5em;
+    }
+
     .contacto__imagen {
         width: 12em;
         border-radius: 5em;
@@ -1191,7 +1147,7 @@ footer {
     }
 
     .contacto__parrafo {
-        font-size: 2.6em;
+        font-size: 2.5em;
     }
 
     .contacto__formulario {
@@ -1210,10 +1166,18 @@ footer {
 
 @media screen and (max-width: 700px) { 
     .contacto__parrafo {
-        font-size: 2.4em;
+        font-size: 2.3em;
         width: 90%;
         margin: auto;
-        height: 7em;
+        height: 10em;
+    }
+
+    .titulo-h2-formulariocontaco {
+        font-size: 2em;
+    }
+
+    .contacto__contenedorQR {
+        margin: 2em auto 2em;
     }
 
     .contacto__imagen {
