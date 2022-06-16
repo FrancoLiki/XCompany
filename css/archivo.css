@@ -29,9 +29,8 @@
 
 body {
     background-color: var(--Primario);
+    scroll-behavior: smooth;
 }
-
-
 
 /* Inico de diseño navegador de las pagina */
 
@@ -292,7 +291,7 @@ footer {
 .ProductosDestacados__h2 {
     font-size: var(--Base);
     color: var(--Letras);
-    font-weight: var(--Parrafo);
+    font-weight: var(--Titulo);
     text-align: center;
     margin: 2em 0 2em;
     font-family: var(--Titulos);
@@ -338,7 +337,6 @@ footer {
     text-align: center;
     font-family: var(--Titulos);
     font-size: var(--Grande);
-    font-weight: var(--Titulo);
     font-weight: var(--Titulo);
     color: var(--Letras);
 }
@@ -530,16 +528,10 @@ footer {
 
 #SECCIONREMERAS {
     width: 100vw;
-    background-image: linear-gradient(to top, #cfd9df17 0%, #3e495070 100%) ,url(../imagenes/fondoseccionremeras.jpg);
-    background-size: contain;
-    background-position: center;
-    
 }
 
 #SECCIONPANTALON {
     width: 100vw;
-    background-image: url(../imagenes/fondoseccionpantalon.jpg);
-    background-size: contain;
 }
 
 #CatalogoVerano {
@@ -564,7 +556,7 @@ footer {
     background-color: var(--Secundario);
     font-size: 0.5em;
     padding: 0.2em;
-    border: solid 0.3em var(--Secundario);
+    border: solid 0.2em var(--Secundario);
     box-sizing: content-box;
     border-radius: 0.8em;
     margin: 1em;
@@ -574,7 +566,7 @@ footer {
 .ListaCatalogoVerano__link:hover{
     background-color: black;
     color: white;
-    border: solid 0.3em white;
+    border: solid 0.2em white;
 }
 
 
@@ -637,7 +629,7 @@ footer {
 }
 
 .articuloRemera__imagen {
-    width: 400px;
+    width: 400px !important;
     height: 400px;
     transition: 0.7s;
     margin: 1em;
@@ -645,7 +637,6 @@ footer {
 
 .articuloRemera__imagen:hover {
     opacity: 0.9;
-    transform: translate(2em);
     border-radius: 2em;
 }
 
@@ -674,7 +665,7 @@ footer {
 }
 
 .articuloPantalonesCorto__imagen {
-    width: 400px;
+    width: 400px !important;
     height: 400px;
     transition: 0.7s;
     margin: 1em;
@@ -682,7 +673,6 @@ footer {
 
 .articuloPantalonesCorto__imagen:hover {
     opacity: 0.9;
-    transform: translate(2em);
     border-radius: 2em;
 }
 
@@ -716,13 +706,13 @@ footer {
     }
 
     .articuloPantalonesCorto__imagen {
-        width: 250px;
+        width: 250px !important; 
         height: 250px;
         margin: 1em;
     }
 
     .articuloRemera__imagen {
-        width: 250px;
+        width: 250px !important;
         height: 250px;
         margin: 1em;
     }
@@ -749,15 +739,49 @@ footer {
     }
 
     .articuloPantalonesCorto__imagen:hover {
-        transform: translate(0);
         border-radius: 3em;
     }
 
     .articuloRemera__imagen:hover {
-    transform: translate(0);
     border-radius: 3em;
 }
 }
+
+
+/* INICIO CARDS Y OFFCANVAS EN CATALOGOS */
+
+.card {
+    margin: 2em auto 2em;
+}
+
+.card:hover {
+    background-color: var(--Primario);
+    border-radius: 2em;
+    transition: 1.2s;
+}
+
+.card-title {
+    color: var(--Letras);
+    font-family: var(--Titulos);
+    font-size: var(--Chica);
+    font-weight: var(--Titulo);
+}
+
+
+.offcanvas-title {
+    font-size: var(--Base);
+    color: var(--Letras);
+    font-weight: var(--Titulo);
+}
+
+.offcanvas-body p {
+    font-size: var(--Chica);
+    color: var(--Letras);
+    font-weight: var(--Parrafo);
+}
+
+
+/* FIN CARDS Y OFFCANVAS EN CATALOGOS */
 
 /* Comienzo del diseño de la página CATALOGO INVIERNO */
 
@@ -781,13 +805,12 @@ footer {
    
 .listaseccionesinvierno__link {
     color: var(--Letras);
-    font-weight: var(--Titulo);
     list-style-type: none;
     text-decoration: none;
     background-color: var(--Secundario);
-    font-size: 2.4em;
+    font-size: 2em;
     padding: 0.2em;
-    border: solid 0.3em var(--Secundario);
+    border: solid 0.2em var(--Secundario);
     box-sizing: content-box;
     border-radius: 1.2em;
     transition: 1.2s;
@@ -796,7 +819,7 @@ footer {
 .listaseccionesinvierno__link:hover {
     background-color: black;
     color: white;
-    border: solid 0.3em white;
+    border: solid 0.2em white;
 
 }
 
@@ -814,8 +837,6 @@ footer {
 /* CATALOGO INVIERNO - SECCION BUZOS */
 
 #SECCIONBUZOS {
-    background-image: url(../imagenes/fondoseccionbuzos.jpg);
-    background-size: contain;
     display: flex;
     flex-direction: row;
     width: 90vw;
@@ -836,15 +857,14 @@ footer {
 }
 
 .articuloBuzo__imagen {
-    width: 300px;
-    height: 380px;
+    width: 400px !important;
+    height: 480px;
     transition: 0.7s;
     margin: 1em;
 }
 
 .articuloBuzo__imagen:hover {
     opacity: 0.9;
-    transform: translate(2em);
     border-radius: 2em;
 }
 
@@ -853,8 +873,6 @@ footer {
 
 #SECCIONCAMPERAS {
     width: 100vw;
-    background-image: url(../imagenes/fondoseccioncamperas.jpg);
-    background-size: contain;
     display: flex;
     flex-direction: row;
     width: 90vw;
@@ -876,15 +894,14 @@ footer {
 }
 
 .articuloCampera__imagen {
-    width: 300px;
-    height: 380px;
+    width: 400px !important;
+    height: 480px;
     transition: 0.7s;
     margin: 1em;
 }
 
 .articuloCampera__imagen:hover {
     opacity: 0.9;
-    transform: translate(2em);
     border-radius: 2em;
 }
 
@@ -892,8 +909,6 @@ footer {
 /* CATALOGO INVIERNO - SECCION PANTALONES */
 
 #SECCIONPANTALONES {
-    background-image: url(../imagenes/fondoseccionpantalones.jpg);
-    background-size: contain;
     display: flex;
     flex-direction: row;
     width: 90vw;
@@ -920,15 +935,14 @@ footer {
 }
 
 .articuloPantalones__imagen {
-    width: 300px;
-    height: 380px;
+    width: 400px !important;
+    height: 480px;
     transition: 0.7s;
     margin: 1em;
 }
 
 .articuloPantalones__imagen:hover {
     opacity: 0.9;
-    transform: translate(2em);
     border-radius: 2em;
 }
 /* Fin del diseño de la página CATALOGO INVIERNO */
@@ -962,35 +976,32 @@ footer {
     }
 
     .articuloPantalones__imagen {
-        width: 200px;
+        width: 200px !important;
         height: 250px;
         margin: 1em;
     }
 
     .articuloBuzo__imagen {
-        width: 200px;
+        width: 200px !important;
         height: 250px;
         margin: 1em;
     }
 
     .articuloCampera__imagen {
-        width: 200px;
+        width: 200px !important;
         height: 250px;
         margin: 1em;   
     }
 
     .articuloPantalones__imagen:hover {
-        transform: translate(0);
         border-radius: 3em;
     }
 
     .articuloBuzo__imagen:hover {
-    transform: translate(0);
     border-radius: 3em;
     }
 
     .articuloCampera__imagen:hover {
-        transform: translate(0);
         border-radius: 3em;
     }
         
@@ -1014,10 +1025,13 @@ footer {
         font-size: var(--Chica);
     }
 
+    .listaseccionesinvierno {
+        gap: 0.6em;
+    }
+
     .listaseccionesinvierno__link {
-        padding: 0.4em;
+        padding: 0.3em;
         font-size:1.8em;
-        
     }
 }
 
@@ -1103,6 +1117,8 @@ footer {
 .textarea-contacto {
     resize: none;
 } 
+
+/* Media queries de contacto */
 
 @media screen and (max-width: 1660px) {
     .contacto__formularioDiv {
@@ -1300,6 +1316,8 @@ footer {
     font-size: 1.2em;
     color: var(--Letras);
 }
+
+/* Media queries de la pagina incio sesion */
 
 @media screen and (max-width: 1150px) {
     .Form {
