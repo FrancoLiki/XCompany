@@ -1,0 +1,337 @@
+/* CATALOGO INVIERNO */
+
+#CatalogoInvierno {
+
+    .h1catalogoinvierno {
+        font-family: $Titulos;
+        font-size: $Mediano;
+        color: $Letras;
+        text-align: center;
+        margin: 1rem 2rem 3rem;
+    }
+
+    .listaseccionesinvierno {
+        list-style: none;
+        margin: 2em auto 2em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 90vw;
+        gap: 6em;
+
+        .listaseccionesinvierno__link {
+            color: $Letras;
+            list-style-type: none;
+            text-decoration: none;
+            background-color: $Secundario;
+            font-size: 2em;
+            padding: 0.2em;
+            border: solid 0.2em $Secundario;
+            box-sizing: content-box;
+            border-radius: 1.2em;
+            transition: 1.2s;
+
+            &:hover {
+                background-color: black;
+                color: white;
+                border: solid 0.2em white;
+            }
+        }
+    }
+
+    .h2catalogoinvierno {
+            font-family:$Titulos ;
+            font-size: $Mediano;
+            color: $Letras;
+            font-weight: $Titulo;
+            text-align: center;
+            margin: 0rem 2rem 2rem;
+            padding-top: 2.5rem;
+    }
+
+    /* CATALOGO INVIERNO - SECCION BUZOS */
+
+    #SECCIONBUZOS {
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        margin: auto;
+            
+        .articuloBuzo {
+            width: 50%;
+            display: flex;
+            margin-top: 2em;
+            gap: 2em;
+            justify-content: space-around;
+
+            .articuloBuzo__lista {
+                 list-style: none;
+                margin: 6em 1.5em 8em; 
+
+                .card {
+                    margin: 2em auto 2em;
+
+                    &:hover {
+                        background-color: $Primario;
+                        border-radius: 2em;
+                        transition: 1.2s;
+                    }               
+
+                    .articuloBuzo__imagen {
+                        width: 400px !important;
+                        height: 480px;
+                        transition: 0.7s;
+                        margin: 1em;
+
+                        &:hover {
+                            opacity: 0.9;
+                            border-radius: 2em;
+                        }
+                    }
+                
+                    .card-title {
+                        color: $Letras;
+                        font-family: $Titulos;
+                        font-size: $Chica;
+                        font-weight: $Titulo;
+                    }
+        
+                    .offcanvas-title {
+                        font-size: $Base;
+                        color: $Letras;
+                        font-weight: $Titulo;
+                    }
+                        
+                    .offcanvas-body p {
+                        font-size: $Chica;
+                        color: $Letras;
+                        font-weight: $Parrafo;
+                    }
+                }   
+            }
+        }
+    }
+
+    /* CATALOGO INVIERNO - SECCION CAMPERAS */
+
+    #SECCIONCAMPERAS {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        margin: auto;
+        
+        .articuloCampera {
+            width: 100%;
+            margin-top: 2em;
+
+            .articuloCampera__lista {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                gap: 2em;
+                margin: 6em 1.5em 8em; 
+
+                .card {
+                    margin: 2em auto 2em;
+
+                    &:hover {
+                        background-color: $Primario;
+                        border-radius: 2em;
+                        transition: 1.2s;
+                    } 
+
+                    .articuloCampera__imagen {
+                        width: 400px !important;
+                        height: 480px;
+                        transition: 0.7s;
+                        margin: 1em;
+ 
+                        &:hover {
+                            opacity: 0.9;
+                            border-radius: 2em;
+                        }
+                    }
+                    
+                    .card-title {
+                        color: $Letras;
+                        font-family: $Titulos;
+                        font-size: $Chica;
+                        font-weight: $Titulo;
+                    }
+        
+                    .offcanvas-title {
+                        font-size: $Base;
+                        color: $Letras;
+                        font-weight: $Titulo;
+                    }
+                        
+                    .offcanvas-body p {
+                        font-size: $Chica;
+                        color: $Letras;
+                        font-weight: $Parrafo;
+                    }
+                }  
+            }
+        }
+    }
+
+    /* CATALOGO INVIERNO - SECCION PANTALONES */
+
+    #SECCIONPANTALONES {
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        margin: auto;
+
+        .articuloPantalones {
+            width: 50%;
+            margin-top: 2em;
+            display: flex;
+            flex-direction: row;
+            width: 50%;
+            gap: 1em;
+            justify-content: space-around;
+            
+            .articuloPantalones__lista {
+                list-style: none;
+                margin: 6em 1.5em 8em;
+
+                .card {
+                    margin: 2em auto 2em;
+
+                    &:hover {
+                        background-color: $Primario;
+                        border-radius: 2em;
+                        transition: 1.2s;
+                    } 
+
+                    .articuloPantalones__imagen {
+                        width: 400px !important;
+                        height: 480px;
+                        transition: 0.7s;
+                        margin: 1em;
+
+                        &:hover {
+                            opacity: 0.9;
+                            border-radius: 2em;
+                        }
+                    }
+                    
+                    .card-title {
+                        color: $Letras;
+                        font-family: $Titulos;
+                        font-size: $Chica;
+                        font-weight: $Titulo;
+                    }
+        
+                    .offcanvas-title {
+                        font-size: $Base;
+                        color: $Letras;
+                        font-weight: $Titulo;
+                    }
+                        
+                    .offcanvas-body p {
+                        font-size: $Chica;
+                        color: $Letras;
+                        font-weight: $Parrafo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media queries del catalogo invierno */
+
+@media screen and (max-width:800px) {
+
+    #CatalogoInvierno {
+ 
+        .h1catalogoinvierno {
+            font-size: $Base;
+        }
+        
+        .listaseccionesinvierno {
+            gap: 0.6em;
+
+            .listaseccionesinvierno__link {
+                padding: 0.3em;
+                font-size:1.8em;
+            }
+    
+        }
+
+        .h2catalogoinvierno {
+            font-size: $Chica;
+        }
+
+        #SECCIONBUZOS {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            gap:0;
+
+            .articuloBuzo__lista {
+                margin: 0;
+            
+                .articuloBuzo__imagen {
+                    width: 200px !important;
+                    height: 250px;
+                    margin: 1em;
+
+                    &hover {
+                        border-radius: 3em;
+                    }
+                }   
+            }       
+        }
+
+        #SECCIONPANTALONES {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            gap:1em;
+
+            .articuloPantalones__lista {
+                margin: 0;
+
+                .articuloPantalones__imagen {
+                    width: 200px !important;
+                    height: 250px;
+                    margin: 1em;
+
+                    &:hover {
+                        border-radius: 3em;
+                    }
+                
+                }
+            }
+        }
+
+        .articuloCampera__lista {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            gap:0;
+ 
+            .articuloCampera__lista {
+                margin: 0;
+
+                .articuloCampera__imagen {
+                    width: 200px !important;
+                    height: 250px;
+                    margin: 1em;  
+                    
+                    &:hover {
+                        border-radius: 3em;
+                    }
+                }
+            }
+        }
+    }
+}

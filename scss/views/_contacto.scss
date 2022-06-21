@@ -1,0 +1,162 @@
+/* CONTACTO */
+
+/* Comienzo del diseño de la página CONTACTO */
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto 6em;
+    width: 90vw;
+    gap: 8em;
+
+    .contacto__div {
+        display: flex;
+        width: 90vw;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+
+        .contacto__parrafo {
+            width: 50%;
+            height: 8em;
+            text-align: center;
+            padding: 1rem 0 2rem;
+            margin: 2em auto 1em;
+            font-size: 3.5em;
+            color: $Letras;
+        }
+
+        .contacto__contenedorQR{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10em;
+
+            .contacto__android {
+                width: 15rem;
+                height: 17rem;
+                margin: 1rem 4rem 2rem;
+                border: solid $Primario 0.4em;
+                transition: 0.8s;
+
+                &:hover {
+                    opacity: 0.6;
+                    border: solid #414042 0.4em;
+                    border-radius: 0.8em;
+                }
+            }
+            
+            .contacto__ios {
+                width: 15rem;
+                height: 17rem;
+                margin: 1rem 4rem 2rem;
+                border: solid $Primario 0.4em;
+                transition: 0.8s;
+
+                &:hover {
+                    opacity: 0.6;
+                    border: solid #414042 0.4em;
+                    border-radius: 0.8em;
+                }
+            }
+        }
+    }
+}
+
+.contacto__formularioDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto 5em;
+    color: #BCBCBE !important;
+
+    .titulo-h2-formulariocontaco {
+        font-size: 3.5em;
+    }
+    
+    .textarea-contacto {
+        resize: none;
+    }
+} 
+
+/* Media queries de contacto */
+
+@media screen and (max-width: 1660px) {
+    .contacto__formularioDiv {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0.4em;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+   .contacto__contenedorParrafo {
+        .contacto__parrafo {
+            font-size: 2.5em;
+        }    
+   }
+   
+   .contacto__contenedorQR {       
+        .contacto__android {
+            margin-right: 1em;
+        }
+
+        .contacto__ios {
+            margin-left: 1em;
+        }
+   }
+
+   .contacto__formularioDiv {
+        .titulo-h2-formulariocontaco {
+            font-size: 2.5em;
+        }
+   }
+
+}
+
+@media screen and (max-width: 700px) { 
+   
+    .contacto {
+        gap: 4em;
+
+        .contacto__contenedorParrafo {
+            .contacto__parrafo {
+                font-size: 2.3em;
+                width: 90%;
+                margin: auto;
+                height: 10em;
+            }
+        }
+
+        .contacto__contenedorQR {
+            gap: 2em;
+            margin: 2em auto 2em;
+
+            .contacto__android {
+                width: 8em;
+                height: 10em;
+                 margin: 1em 0.5em 1em 1em;
+            }
+        
+            .contacto__ios {
+                width: 8em;
+                height: 10em;
+                margin: 1em 0.5em 1em 1em;
+            }
+        }
+    }    
+
+    .contacto__formularioDiv {
+        .titulo-h2-formulariocontaco {
+            font-size: 2em;
+        }
+   }
+}
+
+/* Fin del diseño de la página CONTACTO */

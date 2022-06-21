@@ -1,0 +1,255 @@
+/* CATALOGO VERANO */
+
+
+#CatalogoVerano {
+    display: flex;
+    flex-direction: column;
+
+    .ListaCatalogoVerano {
+        list-style: none;
+        text-align: center;
+        font-size: $Chica;
+        font-family: $Textos;
+        font-weight: $Parrafo;
+        color: $Letras;
+        margin-bottom: 1rem;
+
+        .ListaCatalogoVerano__h1 {
+            font-family: $Titulos;
+            font-size: $Mediano;
+            color: $Letras;
+            font-weight: $Titulo;
+            text-align: center;
+            margin: 1rem 2rem 3rem;
+        }
+
+        .ListaCatalogoVerano__ul {
+            display: flex;
+            width: 90vw;
+            margin: auto;
+            justify-content: center;
+            list-style: none;
+
+            .ListaCatalogoVerano__item {
+                font-size: $Base;
+                font-family: $Titulos;
+
+                .ListaCatalogoVerano__link {
+                    color: $Letras;
+                    list-style-type: none;
+                    text-decoration: none;
+                    background-color: $Secundario;
+                    font-size: 0.5em;
+                    padding: 0.2em;
+                    border: solid 0.2em $Secundario;
+                    box-sizing: content-box;
+                    border-radius: 0.8em;
+                    margin: 1em;
+                    transition: 1.2s;
+
+                    &__link:hover{
+                        background-color: black;
+                        color: white;
+                        border: solid 0.2em white;
+                    }
+                }
+            }
+        }
+    }
+
+    .h2catalogoverano {
+        font-family: $Titulos;
+        font-size: $Mediano;
+        color: $Letras;
+        font-weight: $Titulo;
+        text-align: center;
+        margin: 0rem 2rem 2rem;
+        padding-top: 2.5rem;
+    }
+    
+    #SECCIONREMERAS {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
+    
+        .articuloRemera {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2em;
+            gap: 2em;
+            align-content: space-around;
+    
+            .articuloRemera__lista {
+                list-style: none;
+                margin: 6em 1.5em 8em; 
+    
+                .card {
+                    margin: 2em auto 2em;
+    
+                    &:hover {
+                        background-color: $Primario;
+                        border-radius: 2em;
+                        transition: 1.2s;
+                    }
+    
+                    .articuloRemera__imagen {
+                        width: 400px !important;
+                        height: 400px;
+                        transition: 0.7s;
+                        margin: 1em;
+          
+                        &:hover {
+                            opacity: 0.9;
+                            border-radius: 2em;
+                        }       
+                    }
+    
+                    .card-title {
+                        color: $Letras;
+                        font-family: $Titulos;
+                        font-size: $Chica;
+                        font-weight: $Titulo;
+                    }
+    
+                    .offcanvas-title {
+                        font-size: $Base;
+                        color: $Letras;
+                        font-weight: $Titulo;
+                    }
+            
+                    .offcanvas-body p {
+                        font-size: $Chica;
+                        color: $Letras;
+                        font-weight: $Parrafo;
+                    }
+                }
+            }
+        }    
+    }
+
+    #SECCIONPANTALON {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto;
+    
+        .articuloPantalonesCorto {
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 2em;
+            gap: 2em;
+            align-content: space-around;
+    
+            .articuloPantalonesCorto__lista {
+                list-style: none;
+                margin: 6em 1.5em 8em; 
+    
+                .card {
+                    margin: 2em auto 2em;
+    
+                    &:hover {
+                        opacity: 0.9;
+                        border-radius: 2em;
+                    }  
+    
+                    .articuloPantalonesCorto__imagen {
+                        width: 400px !important;
+                        height: 400px;
+                        transition: 0.7s;
+                        margin: 1em;
+                    
+                    
+                        &__imagen:hover {
+                            opacity: 0.9;
+                            border-radius: 2em;
+                        }
+                    }
+    
+                    .offcanvas-title {
+                        font-size: $Base;
+                        color: $Letras;
+                        font-weight: $Titulo;
+                    }
+                    
+                    .offcanvas-body p {
+                        font-size: $Chica;
+                        color: $Letras;
+                        font-weight: $Parrafo;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Media CATALOGO VERANO */
+
+@media screen and (max-width: 1000px){
+
+    #CatalogoVerano {
+
+        .ListaCatalogoVerano__h1 {
+            font-size: $Base;
+
+            .ListaCatalogoVerano__link {
+                padding: 0.1em;
+                font-size:0.5em;
+            }
+        }
+
+        .h2catalogoverano {
+            font-size: $Chica;
+        }
+
+        #SECCIONREMERAS {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            gap: 0;
+    
+            .articuloRemera__lista {
+                margin: 0;
+    
+                .articuloRemera__imagen {
+                    width: 250px !important;
+                    height: 250px;
+                    margin: 1em;
+
+                    &:hover {
+                        border-radius: 3em;
+                    }
+                }
+            }
+        }
+
+        #SECCIONPANTALON {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin: auto;
+            gap:0;
+    
+            .articuloPantalonesCorto__lista {
+                margin: 0;
+    
+                .articuloPantalonesCorto__imagen {
+                    width: 250px !important; 
+                    height: 250px;
+                    margin: 1em;
+
+                    &:hover {
+                        border-radius: 3em;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+   

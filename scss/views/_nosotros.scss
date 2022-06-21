@@ -1,0 +1,95 @@
+/* NOSOTROS */
+
+#nosotros {
+    display: grid;
+    grid-template-columns: 12 1fr;
+    grid-template-rows: 6 1fr;
+    width: 90vw;
+    margin: auto;
+    margin-bottom: 6em ;
+
+    .nosotros__h1 {
+        width: 90vw;
+        margin: 1em auto;
+        grid-row: 1 / 3 ;
+        grid-column: 1 / 13;
+        text-align: center;
+        font-family: $Titulos;
+        font-size: $Grande;
+        font-weight: $Titulo;
+        color: $Letras;
+    }
+    
+    .nosotros__parrafo {
+        grid-row: 3 / 5;
+        grid-column: 1 / 7;
+        margin: auto;
+        font-size: $Chica;
+        color: $Letras;
+        font-weight: $Parrafo;
+        font-family: $Textos;
+        width: 40vw;
+        text-align: center;
+        border-top: solid #7A7C7F 5px;
+        border-left: solid #7A7C7F 5px;
+        padding: 1em 0 0 1em;
+    }
+
+    .nosotros__imagen {
+        grid-row: 3 / 5;
+        grid-column: 7 / 13;
+        width: 45vw;
+    }
+
+    .nosotros__imagen2 {
+        grid-row: 5 / 7;
+        grid-column: 1 / 7;
+        width: 45vw;
+    }
+    .nosotros__parrafo2 {
+        grid-row: 5 / 7;
+        grid-column: 7 / 13;
+        margin: auto;
+        font-size: $Chica;
+        color: $Letras;
+        font-weight: $Parrafo;
+        font-family: $Textos;
+        width: 40vw;
+        text-align: center;
+        border-bottom: solid #7A7C7F 5px;
+        border-right: solid #7A7C7F 5px;
+        padding: 0 1em 1em 0;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .nosotros__parrafo {
+            width: 70%;
+            border-top: none;
+            border-right: solid #7A7C7F 5px;
+        }
+    
+        .nosotros__h1 {
+            font-size: $Base;
+        }
+    
+        .nosotros__parrafo2 {
+            width: 70%;
+            border-bottom: none;
+            border-left: solid #7A7C7F 5px;
+        }
+    
+        .nosotros__imagen2 {
+            width: 80%;
+        }
+    
+        .nosotros__imagen {
+            width: 80%;
+        }
+    } 
+}

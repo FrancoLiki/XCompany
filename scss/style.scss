@@ -1,0 +1,20 @@
+    /* MISC */
+
+    @import "./misc/variable";
+    @import "./misc/normalize";
+    @import "./misc/mixins";
+
+  /* PARTIALS */
+
+    @import "./partials/header";
+    @import "./partials/footer";
+
+  /* VIEWS */
+
+    @import "./views/home";
+    @import "./views/nosotros";
+    @import "./views/catalogo";
+    @import "./views/catalogoinvierno";
+    @import "./views/catalogoverano";
+    @import "./views/contacto";
+    @import "./views/iniciosesion.scss";

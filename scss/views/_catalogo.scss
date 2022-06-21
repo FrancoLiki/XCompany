@@ -1,0 +1,138 @@
+/* CATALOGO */
+
+.seccion {
+    background-image: url(../imagenes/fondopantallacatologo.png);
+    background-size:cover;
+    background-position-y: center;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+    .seccion__h1 {
+        width: 90vw;
+        margin: 1em auto 0;
+        text-align: center;
+        color: $Letras;
+        font-family: $Titulos;
+        font-weight: $Titulo;
+        font-size: $Mediano;
+    }
+
+    .seccion__catalogo {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+        margin: auto;
+
+        .seccion__invierno {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .seccion__imageninvierno {
+                width: 15vw;
+            }
+
+            .seccion__imagen {
+                border-radius: 2em;
+                border: solid #2C2C2E 0.5em;
+
+                &__imagen:hover {
+                    border: solid #BCBCBE 0.5em;
+                    opacity: 0.6;
+                }
+            }
+
+            .seccion__h2 {
+                width: 40vw;
+                margin: 0 auto 2em;
+                color: $Letras;
+                font-family: $Titulos;;
+                font-weight: $Titulo;
+                font-size: $Base;
+                text-align: center;
+            }
+        }
+
+        .seccion__verano {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .seccion__imagenverano {
+                width: 15vw;
+            }   
+
+            .seccion__imagen {
+                border-radius: 2em;
+                border: solid #2C2C2E 0.5em;
+
+                &__imagen:hover {
+                    border: solid #BCBCBE 0.5em;
+                    opacity: 0.6;
+                }
+            }
+
+            .seccion__h2 {
+                width: 40vw;
+                margin: 0 auto 2em;
+                color: $Letras;
+                font-family: $Titulos;;
+                font-weight: $Titulo;
+                font-size: $Base;
+                text-align: center;
+            }
+        }     
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .seccion {
+        .seccion__h1 {
+            font-size: $Base;
+        }
+        .seccion__catalogo {
+            flex-direction: column;
+            width: 90vw;
+            margin: auto;
+
+            .seccion__invierno {
+                flex-direction: row;
+                justify-content: center;
+
+                .seccion__imageninvierno{
+                    width: 50%;
+                }
+                .seccion__h2 {
+                    font-size: $Chica;
+                    width: 40%;
+                }
+            }
+            .seccion__verano {
+                flex-direction: row;
+
+                .seccion__imagenverano {
+                    width: 50%;
+                }
+                .seccion__h2 {
+                    font-size: $Chica;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
