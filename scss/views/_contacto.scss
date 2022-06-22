@@ -98,7 +98,8 @@
 
    .contacto__contenedorParrafo {
         .contacto__parrafo {
-            font-size: 2.5em;
+            font-size: 2.5em !important;
+            margin: 0 auto 4em !important;
         }    
    }
    
@@ -127,26 +128,26 @@
 
         .contacto__contenedorParrafo {
             .contacto__parrafo {
-                font-size: 2.3em;
-                width: 90%;
-                margin: auto;
-                height: 10em;
+                font-size: 2.3em !important;
+                width: 90% !important;
+                margin: 0 auto 4em;
+                height: 10em !important;
             }
         }
 
         .contacto__contenedorQR {
-            gap: 2em;
+            gap: 2em !important;
             margin: 2em auto 2em;
 
             .contacto__android {
-                width: 8em;
-                height: 10em;
+                width: 8em !important;
+                height: 10em !important;
                  margin: 1em 0.5em 1em 1em;
             }
         
             .contacto__ios {
-                width: 8em;
-                height: 10em;
+                width: 8em !important;
+                height: 10em !important;
                 margin: 1em 0.5em 1em 1em;
             }
         }

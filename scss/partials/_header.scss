@@ -25,6 +25,10 @@ nav {
         border-radius: 1em;
     }
 
+    .navbar-toggler {
+        background-color: $Secundario !important;
+    }
+
     .IncioSesion__link {
         color: #BCBCBE !important;
         font-size: 1.6em !important;
@@ -71,9 +75,8 @@ nav {
 
 @media screen and (max-width: 700px){
     .logo {
-        width: 22em;
-        height: 4em;
-        border-radius: 1em;
+        width: 22em !important;
+        height: 4em !important;
     }
 
     .IncioSesion__link {

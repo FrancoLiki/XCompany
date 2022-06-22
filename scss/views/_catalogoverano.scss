@@ -96,7 +96,7 @@
                     }
     
                     .articuloRemera__imagen {
-                        width: 400px !important;
+                        width: 400px;
                         height: 400px;
                         transition: 0.7s;
                         margin: 1em;
@@ -153,22 +153,23 @@
                     margin: 2em auto 2em;
     
                     &:hover {
-                        opacity: 0.9;
+                        background-color: $Primario;
                         border-radius: 2em;
-                    }  
-    
+                        transition: 1.2s;
+                        color: $Letras;
+                    }
+
                     .articuloPantalonesCorto__imagen {
-                        width: 400px !important;
+                        width: 400px;
                         height: 400px;
                         transition: 0.7s;
                         margin: 1em;
-                    
-                    
-                        &__imagen:hover {
+          
+                        &:hover {
                             opacity: 0.9;
                             border-radius: 2em;
                         }
-                    }
+                    } 
     
                     .offcanvas-title {
                         font-size: $Base;
@@ -218,7 +219,7 @@
     
                 .articuloRemera__imagen {
                     width: 250px !important;
-                    height: 250px;
+                    height: 250px !important;
                     margin: 1em;
 
                     &:hover {
@@ -240,7 +241,7 @@
     
                 .articuloPantalonesCorto__imagen {
                     width: 250px !important; 
-                    height: 250px;
+                    height: 250px !important;
                     margin: 1em;
 
                     &:hover {
