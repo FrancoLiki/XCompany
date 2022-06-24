@@ -135,7 +135,7 @@
 
                 .card {
                     margin: 2em auto 2em;
-        
+                    width: 42.2em;
                 
                     &:hover {
                         background-color: $Primario;
@@ -302,6 +302,7 @@
             .articuloPantalones__lista {
                 margin: 0 !important;
 
+
                 .articuloPantalones__imagen {
                     width: 200px !important;
                     height: 250px !important;
@@ -322,8 +323,11 @@
             .articuloCampera__lista {
                 display: flex;
                 flex-direction: column !important;
-                margin: auto;
                 gap:0;
+                
+                div.card {
+                    width: 22.2em !important;
+                }
                 
                 .articuloCampera__imagen {
                     width: 200px !important;

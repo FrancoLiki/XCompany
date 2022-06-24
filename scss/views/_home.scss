@@ -74,7 +74,7 @@
                 border: solid 0.5em white;
                 transition: all 1.5s;
 
-                &__img:hover {
+                &:hover {
                     transform: translateY(-2em) !important;
                     border: solid 0.5em #7A7C7F !important;
                 }
@@ -118,6 +118,10 @@
             }
         }
     }        
+
+    .ProductosDestacados__h2{
+        font-size: $Chica !important;
+    }
 
     .ProductosDestacados {
         flex-direction: column;
