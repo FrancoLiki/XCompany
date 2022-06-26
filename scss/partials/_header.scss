@@ -1,16 +1,14 @@
 /* Body */
 
 body {
-    background-color: $Primario;
+    background-color: map-get($map: $Paleta , $key: secundario);
     scroll-behavior: smooth;
 }
 
 /* Navegador */
 
 nav {
-    width: 90vw;
-    height: 15em;
-    margin: auto;
+    height: 15em;   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,13 +24,13 @@ nav {
     }
 
     .navbar-toggler {
-        background-color: $Secundario !important;
+        background-color: map-get($map: $Paleta , $key: secundario) !important;
     }
 
     .IncioSesion__link {
-        color: #BCBCBE !important;
+        color: map-get($map: $Paleta, $key: letras ) !important;
         font-size: 1.6em !important;
-        background-color: #7A7C7F !important;
+        background-color: map-get($map: $Paleta, $key: secundario ) !important;
         text-decoration: none;
         transition: all 1s !important;
     
@@ -43,13 +41,13 @@ nav {
     }
  
     .navegacion__link {
-        color: #BCBCBE !important;
+        color:  map-get($map: $Paleta, $key: letras ) !important;
         font-size: 1.6em !important;
-        background-color: $Secundario;
+        background-color:  map-get($map: $Paleta , $key: secundario);
         text-align: center;
         margin-left: 1.2em;
         border-radius: 0.5em;
-        border: solid $Secundario 0.3em;
+        border: solid  map-get($map: $Paleta , $key: secundario) 0.3em;
         transition: all 1s !important;
     
         &:hover{
@@ -59,7 +57,7 @@ nav {
     }
 
     .navegacion__link1 {
-        color: #BCBCBE !important;
+        color: map-get($map: $Paleta, $key: letras ) !important;
         font-size: 1.6em !important;
     }
 

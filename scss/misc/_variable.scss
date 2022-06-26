@@ -1,10 +1,14 @@
 
-    /* Variables */
+    /* VARIABLES */
 
-   /*Colores*/
-    $Primario: #2C2C2E;
-    $Secundario: #7A7C7F;
-    $Letras: #BCBCBE;
+   /* Mapa de colores */
+
+   $Paleta: (
+    primario: #2C2C2E,
+    secundario: #7A7C7F,
+    letras: #BCBCBE,
+   );
+
 
     /*Font-Family*/
     $Titulos: 'Roboto' serif;
@@ -20,3 +24,7 @@
     $Titulo: 500;
     $Parrafo: 300;
 
+    /* Font-Colors */ 
+    $Letras: #BCBCBE;
+
+    

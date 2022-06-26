@@ -6,7 +6,6 @@
     background-image: linear-gradient(to top, #2c2c2e, #3a3a3c, #48484b, #56575a, #65676a, #67696c, #696a6d, #6b6c6f, #606163, #565558, #4b4b4d, #414042);
     display: flex;
     flex-direction: row;   
-    width: 90vw;
     height: 60em;
     margin: 0 auto 6em;
     gap: 1em;
@@ -16,14 +15,11 @@
         margin: 10em auto 2em;
 
         .Form__parrafo {
-            width: 100%;
-            font-size: $Chica;
-            font-family: $Textos;
-            font-weight: $Parrafo;
+            @include estilofuente ( $Textos, $Chica , $Parrafo, $Letras); 
             text-align: left;
             color: $Letras;
             margin-bottom: 2em;
-        }
+        } 
 
         .Form__imput {
             width: 30em;
@@ -50,10 +46,8 @@
         }
         
         .Form__parrafo1 {
-            width: 100%;
             margin-top: 1.6em;
-            font-size: 1.2em;
-            color: $Letras;
+            @include estilofuente ( $Textos, 1.2em , $Parrafo, $Letras); 
         }
     }
 
@@ -62,12 +56,8 @@
         margin: 10em auto 2em;
 
         .Form__parrafo {
-            width: 100%;
-            font-size: $Chica;
-            font-family: $Textos;
-            font-weight: $Parrafo;
+            @include estilofuente ( $Textos, $Chica , $Parrafo, $Letras); 
             text-align: left;
-            color: $Letras;
             margin-bottom: 2em;
         }
 
@@ -175,4 +165,4 @@
     }   
 } 
 
-/* Fin pagina Inicio Sesion */
+/* Fin pagina Inicio Sesion */ 

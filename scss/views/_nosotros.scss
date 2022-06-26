@@ -4,34 +4,25 @@
     display: grid;
     grid-template-columns: 12 1fr;
     grid-template-rows: 6 1fr;
-    width: 90vw;
-    margin: auto;
     margin-bottom: 6em ;
 
     .nosotros__h1 {
-        width: 90vw;
-        margin: 1em auto;
+        margin-top: 1em;
         grid-row: 1 / 3 ;
         grid-column: 1 / 13;
+        @include estilofuente ( $Titulos, $Grande, $Titulo, $Letras);
         text-align: center;
-        font-family: $Titulos;
-        font-size: $Grande;
-        font-weight: $Titulo;
-        color: $Letras;
     }
     
     .nosotros__parrafo {
-        grid-row: 3 / 5;
+        grid-row: 3 / 5; 
         grid-column: 1 / 7;
         margin: auto;
-        font-size: $Chica;
-        color: $Letras;
-        font-weight: $Parrafo;
-        font-family: $Textos;
+        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras); 
         width: 40vw;
         text-align: center;
-        border-top: solid #7A7C7F 5px;
-        border-left: solid #7A7C7F 5px;
+        border-top: solid  map-get($map: $Paleta , $key: secundario) 5px;
+        border-left: solid  map-get($map: $Paleta , $key: secundario) 5px;
         padding: 1em 0 0 1em;
     }
 
@@ -50,14 +41,11 @@
         grid-row: 5 / 7;
         grid-column: 7 / 13;
         margin: auto;
-        font-size: $Chica;
-        color: $Letras;
-        font-weight: $Parrafo;
-        font-family: $Textos;
+        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras); 
         width: 40vw;
         text-align: center;
-        border-bottom: solid #7A7C7F 5px;
-        border-right: solid #7A7C7F 5px;
+        border-bottom: solid  map-get($map: $Paleta , $key: secundario) 5px;
+        border-right: solid  map-get($map: $Paleta , $key: secundario) 5px;
         padding: 0 1em 1em 0;
     }
 }
@@ -71,7 +59,7 @@
         .nosotros__parrafo {
             width: 70%;
             border-top: none;
-            border-right: solid #7A7C7F 5px;
+            border-right: solid  map-get($map: $Paleta , $key: secundario) 5px;
         }
     
         .nosotros__h1 {
@@ -81,7 +69,7 @@
         .nosotros__parrafo2 {
             width: 70%;
             border-bottom: none;
-            border-left: solid #7A7C7F 5px;
+            border-left: solid  map-get($map: $Paleta , $key: secundario) 5px;
         }
     
         .nosotros__imagen2 {

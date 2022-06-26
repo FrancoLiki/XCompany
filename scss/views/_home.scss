@@ -8,14 +8,9 @@
 
 
     #presentacion {
-        width: 90vw;
-        margin: auto;
 
         .home__titulo {
-            font-family: $Titulos;
-            font-size: $Grande;
-            font-weight: $Titulo;
-            color: $Letras;
+            @include estilofuente ( $Titulos, $Grande, $Titulo, $Letras);
             margin: 0.5em 0;
         }
 
@@ -24,16 +19,14 @@
             justify-content: space-between;
 
             .home__parrafo {
-                font-size: $Chica;
-                font-weight: $Parrafo;
-                width: 30vw;
-                color: $Letras;
+                @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras);
+                width: 30vw; 
             }
 
             .home__div .home__imagen {
                 width: 12em;
                 height: 20em;
-                border: solid 0.25em $Primario;
+                border: solid 0.25em  map-get($map: $Paleta , $key: primario);
                 margin-bottom: 6em;
                 border-radius: 2em;
                 transition: all 1s;
@@ -49,18 +42,14 @@
 #ProductosDestacados{
 
     .ProductosDestacados__h2 {
-        font-size: $Base;
-        color: $Letras;
-        font-weight: $Titulo;
+        @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);
         text-align: center;
         margin: 2em 0 2em;
-        font-family: $Titulos;
     }
 
     .ProductosDestacados {
         display: flex;
         justify-content: space-around;
-        width: 90vw;
         margin: 5em auto 5em;
         gap: 2em;
 

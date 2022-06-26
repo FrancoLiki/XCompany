@@ -3,9 +3,7 @@
 #CatalogoInvierno {
 
     .h1catalogoinvierno {
-        font-family: $Titulos;
-        font-size: $Mediano;
-        color: $Letras;
+        @include estilofuente ( $Titulos, $Mediano, $Titulo, $Letras);
         text-align: center;
         margin: 1rem 2rem 3rem;
     }
@@ -16,17 +14,16 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        width: 90vw;
         gap: 6em;
 
         .listaseccionesinvierno__link {
             color: $Letras;
             list-style-type: none;
             text-decoration: none;
-            background-color: $Secundario;
+            background-color: map-get($map: $Paleta , $key: secundario);
             font-size: 2em;
             padding: 0.2em;
-            border: solid 0.2em $Secundario;
+            border: solid 0.2em  map-get($map: $Paleta , $key: secundario);
             box-sizing: content-box;
             border-radius: 1.2em;
             transition: 1.2s;
@@ -40,10 +37,7 @@
     }
 
     .h2catalogoinvierno {
-            font-family:$Titulos ;
-            font-size: $Mediano;
-            color: $Letras;
-            font-weight: $Titulo;
+            @include estilofuente ( $Titulos, $Mediano, $Titulo, $Letras);
             text-align: center;
             margin: 0rem 2rem 2rem;
             padding-top: 2.5rem;
@@ -54,8 +48,6 @@
     #SECCIONBUZOS {
         display: flex;
         flex-direction: row;
-        width: 90vw;
-        margin: auto;
             
         .articuloBuzo {
             width: 50%;
@@ -72,7 +64,7 @@
                     margin: 2em auto 2em !important;
 
                     &:hover {
-                        background-color: $Primario;
+                        background-color:  map-get($map: $Paleta , $key: primario);
                         border-radius: 2em;
                         transition: 1.2s;
                     }               
@@ -90,22 +82,15 @@
                     }
                 
                     .card-title {
-                        color: $Letras;
-                        font-family: $Titulos;
-                        font-size: $Chica;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Chica, $Titulo, $Letras);
                     }
         
                     .offcanvas-title {
-                        font-size: $Base;
-                        color: $Letras;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);
                     }
                         
                     .offcanvas-body p {
-                        font-size: $Chica;
-                        color: $Letras;
-                        font-weight: $Parrafo;
+                        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras);
                     }
                 }   
             }
@@ -115,14 +100,11 @@
     /* CATALOGO INVIERNO - SECCION CAMPERAS */
 
     #SECCIONCAMPERAS {
-        width: 100vw;
         display: flex;
         flex-direction: row;
-        width: 90vw;
-        margin: auto;
         
         .articuloCampera {
-            width: 100%;
+            width: 100%; 
             margin-top: 2em;
 
             .articuloCampera__lista {
@@ -138,7 +120,7 @@
                     width: 42.2em;
                 
                     &:hover {
-                        background-color: $Primario;
+                        background-color:  map-get($map: $Paleta , $key: primario);
                         border-radius: 2em;
                         transition: 1.2s;
                     } 
@@ -156,24 +138,16 @@
                     }
                     
                     .card-title {
-                        color: $Letras;
-                        font-family: $Titulos;
-                        font-size: $Chica;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Chica, $Titulo, $Letras);
                     }
         
                     .offcanvas-title {
-                        font-size: $Base;
-                        color: $Letras;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);
                     }
                         
                     .offcanvas-body p {
-                        font-size: $Chica;
-                        color: $Letras;
-                        font-weight: $Parrafo;
+                        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras);
                     }
-
                 }  
             }
         }
@@ -184,8 +158,6 @@
     #SECCIONPANTALONES {
         display: flex;
         flex-direction: row;
-        width: 90vw;
-        margin: auto;
 
         .articuloPantalones {
             width: 50%;
@@ -204,7 +176,7 @@
                     margin: 2em auto 2em;
 
                     &:hover {
-                        background-color: $Primario;
+                        background-color:  map-get($map: $Paleta , $key: primario);
                         border-radius: 2em;
                         transition: 1.2s;
                     } 
@@ -222,22 +194,15 @@
                     }
                     
                     .card-title {
-                        color: $Letras;
-                        font-family: $Titulos;
-                        font-size: $Chica;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Chica, $Titulo, $Letras);
                     }
         
                     .offcanvas-title {
-                        font-size: $Base;
-                        color: $Letras;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);
                     }
                         
                     .offcanvas-body p {
-                        font-size: $Chica;
-                        color: $Letras;
-                        font-weight: $Parrafo;
+                        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras);
                     }
                 }
             }

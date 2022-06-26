@@ -8,40 +8,31 @@
     .ListaCatalogoVerano {
         list-style: none;
         text-align: center;
-        font-size: $Chica;
-        font-family: $Textos;
-        font-weight: $Parrafo;
-        color: $Letras;
+        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras);
         margin-bottom: 1rem;
 
         .ListaCatalogoVerano__h1 {
-            font-family: $Titulos;
-            font-size: $Mediano;
-            color: $Letras;
-            font-weight: $Titulo;
+            @include estilofuente ( $Titulos, $Mediano, $Titulo, $Letras);
             text-align: center;
             margin: 1rem 2rem 3rem;
         }
 
         .ListaCatalogoVerano__ul {
-            display: flex;
-            width: 90vw;
-            margin: auto;
+            display: flex; 
             justify-content: center;
             list-style: none;
 
             .ListaCatalogoVerano__item {
-                font-size: $Base;
-                font-family: $Titulos;
+                @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);
 
                 .ListaCatalogoVerano__link {
                     color: $Letras;
                     list-style-type: none;
                     text-decoration: none;
-                    background-color: $Secundario;
+                    background-color: map-get($map: $Paleta , $key: secundario);
                     font-size: 0.5em;
                     padding: 0.2em;
-                    border: solid 0.2em $Secundario;
+                    border: solid 0.2em  map-get($map: $Paleta , $key: secundario);
                     box-sizing: content-box;
                     border-radius: 0.8em;
                     margin: 1em;
@@ -58,10 +49,7 @@
     }
 
     .h2catalogoverano {
-        font-family: $Titulos;
-        font-size: $Mediano;
-        color: $Letras;
-        font-weight: $Titulo;
+        @include estilofuente ( $Titulos, $Mediano, $Titulo, $Letras);
         text-align: center;
         margin: 0rem 2rem 2rem;
         padding-top: 2.5rem;
@@ -71,8 +59,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 100%;
-        margin: auto;
     
         .articuloRemera {
             width: 50%;
@@ -90,7 +76,7 @@
                     margin: 2em auto 2em;
     
                     &:hover {
-                        background-color: $Primario;
+                        background-color:  map-get($map: $Paleta , $key: primario);
                         border-radius: 2em;
                         transition: 1.2s;
                     }
@@ -108,22 +94,15 @@
                     }
     
                     .card-title {
-                        color: $Letras;
-                        font-family: $Titulos;
-                        font-size: $Chica;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Chica, $Titulo, $Letras);
                     }
     
                     .offcanvas-title {
-                        font-size: $Base;
-                        color: $Letras;
-                        font-weight: $Titulo;
+                        @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);                   
                     }
             
                     .offcanvas-body p {
-                        font-size: $Chica;
-                        color: $Letras;
-                        font-weight: $Parrafo;
+                        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras);      
                     }
                 }
             }
@@ -134,8 +113,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        width: 100%;
-        margin: auto;
     
         .articuloPantalonesCorto {
             width: 50%;
@@ -154,7 +131,7 @@
                     color: $Letras;
     
                     &:hover {
-                        background-color: $Primario;
+                        background-color: map-get($map: $Paleta , $key: primario);
                         border-radius: 2em;
                         transition: 1.2s;
                         color: $Letras;
@@ -172,16 +149,16 @@
                         }
                     } 
     
-                    .offcanvas-title {
-                        font-size: $Base;
-                        color: $Letras;
-                        font-weight: $Titulo;
+                    .card-title {
+                        @include estilofuente ( $Titulos, $Chica, $Titulo, $Letras);
                     }
-                    
+    
+                    .offcanvas-title {
+                        @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);                   
+                    }
+            
                     .offcanvas-body p {
-                        font-size: $Chica;
-                        color: $Letras;
-                        font-weight: $Parrafo;
+                        @include estilofuente ( $Textos, $Chica, $Parrafo, $Letras);      
                     }
                 }
             }

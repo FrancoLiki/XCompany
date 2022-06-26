@@ -1,27 +1,31 @@
 @charset "UTF-8";
 /* MISC */
-/* Variables */
-/*Colores*/
+/* VARIABLES */
+/* Mapa de colores */
 /*Font-Family*/
 /*Font-sizes*/
 /*Font-Weight*/
+/* Font-Colors */
+/* EXTENDS - BASES GENERALES */
+.bloque-100 {
+  width: 100%;
+  margin: auto; }
+.bloque-90 {
+  width: 90%;
+  margin: auto; }
 /* NORMALIZE */
 * {
   margin: 0;
   padding: 0;
   font-size: 10px; }
-
 /* PARTIALS */
 /* Body */
 body {
-  background-color: #2C2C2E;
+  background-color: #7A7C7F;
   scroll-behavior: smooth; }
-
 /* Navegador */
 nav {
-  width: 90vw;
   height: 15em;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,12 +83,10 @@ nav {
     border-radius: 0.5em; } }
 
 footer {
-  width: 100%;
   height: 12em;
   background-color: #464749;
   display: flex;
   justify-content: space-between;
-  margin: auto;
   color: #BCBCBE;
   padding: 1.5em;
   box-sizing: border-box; }
@@ -132,45 +134,42 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh; }
-  .fondopantalla #presentacion {
-    width: 90vw;
-    margin: auto; }
-    .fondopantalla #presentacion .home__titulo {
-      font-family: "Roboto" serif;
-      font-size: 10rem;
-      font-weight: 500;
+  .fondopantalla #presentacion .home__titulo {
+    font-family: "Roboto" serif;
+    font-size: 10rem;
+    font-weight: 500;
+    color: #BCBCBE;
+    margin: 0.5em 0; }
+  .fondopantalla #presentacion .home {
+    display: flex;
+    justify-content: space-between; }
+    .fondopantalla #presentacion .home .home__parrafo {
+      font-family: sans-serif;
+      font-size: 2rem;
+      font-weight: 300;
       color: #BCBCBE;
-      margin: 0.5em 0; }
-    .fondopantalla #presentacion .home {
-      display: flex;
-      justify-content: space-between; }
-      .fondopantalla #presentacion .home .home__parrafo {
-        font-size: 2rem;
-        font-weight: 300;
-        width: 30vw;
-        color: #BCBCBE; }
-      .fondopantalla #presentacion .home .home__div .home__imagen {
-        width: 12em;
-        height: 20em;
-        border: solid 0.25em #2C2C2E;
-        margin-bottom: 6em;
-        border-radius: 2em;
-        transition: all 1s; }
-        .fondopantalla #presentacion .home .home__div .home__imagen:hover {
-          border: solid 0.25em white; }
+      width: 30vw; }
+    .fondopantalla #presentacion .home .home__div .home__imagen {
+      width: 12em;
+      height: 20em;
+      border: solid 0.25em #2C2C2E;
+      margin-bottom: 6em;
+      border-radius: 2em;
+      transition: all 1s; }
+      .fondopantalla #presentacion .home .home__div .home__imagen:hover {
+        border: solid 0.25em white; }
 
 #ProductosDestacados .ProductosDestacados__h2 {
+  font-family: "Roboto" serif;
   font-size: 4rem;
-  color: #BCBCBE;
   font-weight: 500;
+  color: #BCBCBE;
   text-align: center;
-  margin: 2em 0 2em;
-  font-family: "Roboto" serif; }
+  margin: 2em 0 2em; }
 
 #ProductosDestacados .ProductosDestacados {
   display: flex;
   justify-content: space-around;
-  width: 90vw;
   margin: 5em auto 5em;
   gap: 2em; }
   #ProductosDestacados .ProductosDestacados .ProductosDestacados__div {
@@ -223,27 +222,24 @@ footer {
   display: grid;
   grid-template-columns: 12 1fr;
   grid-template-rows: 6 1fr;
-  width: 90vw;
-  margin: auto;
   margin-bottom: 6em; }
   #nosotros .nosotros__h1 {
-    width: 90vw;
-    margin: 1em auto;
+    margin-top: 1em;
     grid-row: 1 / 3;
     grid-column: 1 / 13;
-    text-align: center;
     font-family: "Roboto" serif;
     font-size: 10rem;
     font-weight: 500;
-    color: #BCBCBE; }
+    color: #BCBCBE;
+    text-align: center; }
   #nosotros .nosotros__parrafo {
     grid-row: 3 / 5;
     grid-column: 1 / 7;
     margin: auto;
-    font-size: 2rem;
-    color: #BCBCBE;
-    font-weight: 300;
     font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #BCBCBE;
     width: 40vw;
     text-align: center;
     border-top: solid #7A7C7F 5px;
@@ -261,10 +257,10 @@ footer {
     grid-row: 5 / 7;
     grid-column: 7 / 13;
     margin: auto;
-    font-size: 2rem;
-    color: #BCBCBE;
-    font-weight: 300;
     font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #BCBCBE;
     width: 40vw;
     text-align: center;
     border-bottom: solid #7A7C7F 5px;
@@ -293,11 +289,6 @@ footer {
 
 /* CATALOGO */
 .seccion {
-  background-image: url(../imagenes/fondopantallacatologo.png);
-  background-size: cover;
-  background-position-y: center;
-  width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: column; }
   .seccion .seccion__h1 {
@@ -306,13 +297,12 @@ footer {
     text-align: center;
     color: #BCBCBE;
     font-family: "Roboto" serif;
+    font-size: 6.5rem;
     font-weight: 500;
-    font-size: 6.5rem; }
+    color: #BCBCBE; }
   .seccion .seccion__catalogo {
     display: flex;
-    justify-content: space-between;
-    width: 90vw;
-    margin: auto; }
+    justify-content: space-between; }
     .seccion .seccion__catalogo .seccion__invierno {
       display: flex;
       flex-direction: column;
@@ -328,10 +318,10 @@ footer {
       .seccion .seccion__catalogo .seccion__invierno .seccion__h2 {
         width: 40vw;
         margin: 0 auto 2em;
-        color: #BCBCBE;
         font-family: "Roboto" serif;
-        font-weight: 500;
         font-size: 4rem;
+        font-weight: 500;
+        color: #BCBCBE;
         text-align: center; }
     .seccion .seccion__catalogo .seccion__verano {
       display: flex;
@@ -348,10 +338,10 @@ footer {
       .seccion .seccion__catalogo .seccion__verano .seccion__h2 {
         width: 40vw;
         margin: 0 auto 2em;
-        color: #BCBCBE;
         font-family: "Roboto" serif;
-        font-weight: 500;
         font-size: 4rem;
+        font-weight: 500;
+        color: #BCBCBE;
         text-align: center; }
 
 @media screen and (max-width: 1000px) {
@@ -385,6 +375,7 @@ footer {
   #CatalogoInvierno .h1catalogoinvierno {
     font-family: "Roboto" serif;
     font-size: 6.5rem;
+    font-weight: 500;
     color: #BCBCBE;
     text-align: center;
     margin: 1rem 2rem 3rem; }
@@ -394,7 +385,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 90vw;
     gap: 6em; }
     #CatalogoInvierno .listaseccionesinvierno .listaseccionesinvierno__link {
       color: #BCBCBE;
@@ -414,16 +404,14 @@ footer {
   #CatalogoInvierno .h2catalogoinvierno {
     font-family: "Roboto" serif;
     font-size: 6.5rem;
-    color: #BCBCBE;
     font-weight: 500;
+    color: #BCBCBE;
     text-align: center;
     margin: 0rem 2rem 2rem;
     padding-top: 2.5rem; }
   #CatalogoInvierno #SECCIONBUZOS {
     display: flex;
-    flex-direction: row;
-    width: 90vw;
-    margin: auto; }
+    flex-direction: row; }
     #CatalogoInvierno #SECCIONBUZOS .articuloBuzo {
       width: 50%;
       display: flex;
@@ -448,24 +436,23 @@ footer {
               opacity: 0.9;
               border-radius: 2em; }
           #CatalogoInvierno #SECCIONBUZOS .articuloBuzo .articuloBuzo__lista .card .card-title {
-            color: #BCBCBE;
             font-family: "Roboto" serif;
             font-size: 2rem;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoInvierno #SECCIONBUZOS .articuloBuzo .articuloBuzo__lista .card .offcanvas-title {
+            font-family: "Roboto" serif;
             font-size: 4rem;
-            color: #BCBCBE;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoInvierno #SECCIONBUZOS .articuloBuzo .articuloBuzo__lista .card .offcanvas-body p {
+            font-family: sans-serif;
             font-size: 2rem;
-            color: #BCBCBE;
-            font-weight: 300; }
+            font-weight: 300;
+            color: #BCBCBE; }
   #CatalogoInvierno #SECCIONCAMPERAS {
-    width: 100vw;
     display: flex;
-    flex-direction: row;
-    width: 90vw;
-    margin: auto; }
+    flex-direction: row; }
     #CatalogoInvierno #SECCIONCAMPERAS .articuloCampera {
       width: 100%;
       margin-top: 2em; }
@@ -492,23 +479,23 @@ footer {
               opacity: 0.9;
               border-radius: 2em; }
           #CatalogoInvierno #SECCIONCAMPERAS .articuloCampera .articuloCampera__lista .card .card-title {
-            color: #BCBCBE;
             font-family: "Roboto" serif;
             font-size: 2rem;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoInvierno #SECCIONCAMPERAS .articuloCampera .articuloCampera__lista .card .offcanvas-title {
+            font-family: "Roboto" serif;
             font-size: 4rem;
-            color: #BCBCBE;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoInvierno #SECCIONCAMPERAS .articuloCampera .articuloCampera__lista .card .offcanvas-body p {
+            font-family: sans-serif;
             font-size: 2rem;
-            color: #BCBCBE;
-            font-weight: 300; }
+            font-weight: 300;
+            color: #BCBCBE; }
   #CatalogoInvierno #SECCIONPANTALONES {
     display: flex;
-    flex-direction: row;
-    width: 90vw;
-    margin: auto; }
+    flex-direction: row; }
     #CatalogoInvierno #SECCIONPANTALONES .articuloPantalones {
       width: 50%;
       margin-top: 2em;
@@ -535,18 +522,20 @@ footer {
               opacity: 0.9;
               border-radius: 2em; }
           #CatalogoInvierno #SECCIONPANTALONES .articuloPantalones .articuloPantalones__lista .card .card-title {
-            color: #BCBCBE;
             font-family: "Roboto" serif;
             font-size: 2rem;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoInvierno #SECCIONPANTALONES .articuloPantalones .articuloPantalones__lista .card .offcanvas-title {
+            font-family: "Roboto" serif;
             font-size: 4rem;
-            color: #BCBCBE;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoInvierno #SECCIONPANTALONES .articuloPantalones .articuloPantalones__lista .card .offcanvas-body p {
+            font-family: sans-serif;
             font-size: 2rem;
-            color: #BCBCBE;
-            font-weight: 300; }
+            font-weight: 300;
+            color: #BCBCBE; }
 
 /* Media queries del catalogo invierno */
 @media screen and (max-width: 800px) {
@@ -614,27 +603,27 @@ footer {
   #CatalogoVerano .ListaCatalogoVerano {
     list-style: none;
     text-align: center;
-    font-size: 2rem;
     font-family: sans-serif;
+    font-size: 2rem;
     font-weight: 300;
     color: #BCBCBE;
     margin-bottom: 1rem; }
     #CatalogoVerano .ListaCatalogoVerano .ListaCatalogoVerano__h1 {
       font-family: "Roboto" serif;
       font-size: 6.5rem;
-      color: #BCBCBE;
       font-weight: 500;
+      color: #BCBCBE;
       text-align: center;
       margin: 1rem 2rem 3rem; }
     #CatalogoVerano .ListaCatalogoVerano .ListaCatalogoVerano__ul {
       display: flex;
-      width: 90vw;
-      margin: auto;
       justify-content: center;
       list-style: none; }
       #CatalogoVerano .ListaCatalogoVerano .ListaCatalogoVerano__ul .ListaCatalogoVerano__item {
+        font-family: "Roboto" serif;
         font-size: 4rem;
-        font-family: "Roboto" serif; }
+        font-weight: 500;
+        color: #BCBCBE; }
         #CatalogoVerano .ListaCatalogoVerano .ListaCatalogoVerano__ul .ListaCatalogoVerano__item .ListaCatalogoVerano__link {
           color: #BCBCBE;
           list-style-type: none;
@@ -654,17 +643,15 @@ footer {
   #CatalogoVerano .h2catalogoverano {
     font-family: "Roboto" serif;
     font-size: 6.5rem;
-    color: #BCBCBE;
     font-weight: 500;
+    color: #BCBCBE;
     text-align: center;
     margin: 0rem 2rem 2rem;
     padding-top: 2.5rem; }
   #CatalogoVerano #SECCIONREMERAS {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: auto; }
+    justify-content: space-evenly; }
     #CatalogoVerano #SECCIONREMERAS .articuloRemera {
       width: 50%;
       display: flex;
@@ -690,24 +677,24 @@ footer {
               opacity: 0.9;
               border-radius: 2em; }
           #CatalogoVerano #SECCIONREMERAS .articuloRemera .articuloRemera__lista .card .card-title {
-            color: #BCBCBE;
             font-family: "Roboto" serif;
             font-size: 2rem;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoVerano #SECCIONREMERAS .articuloRemera .articuloRemera__lista .card .offcanvas-title {
+            font-family: "Roboto" serif;
             font-size: 4rem;
-            color: #BCBCBE;
-            font-weight: 500; }
+            font-weight: 500;
+            color: #BCBCBE; }
           #CatalogoVerano #SECCIONREMERAS .articuloRemera .articuloRemera__lista .card .offcanvas-body p {
+            font-family: sans-serif;
             font-size: 2rem;
-            color: #BCBCBE;
-            font-weight: 300; }
+            font-weight: 300;
+            color: #BCBCBE; }
   #CatalogoVerano #SECCIONPANTALON {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: auto; }
+    justify-content: space-evenly; }
     #CatalogoVerano #SECCIONPANTALON .articuloPantalonesCorto {
       width: 50%;
       display: flex;
@@ -734,14 +721,21 @@ footer {
             #CatalogoVerano #SECCIONPANTALON .articuloPantalonesCorto .articuloPantalonesCorto__lista .card .articuloPantalonesCorto__imagen:hover {
               opacity: 0.9;
               border-radius: 2em; }
-          #CatalogoVerano #SECCIONPANTALON .articuloPantalonesCorto .articuloPantalonesCorto__lista .card .offcanvas-title {
-            font-size: 4rem;
-            color: #BCBCBE;
-            font-weight: 500; }
-          #CatalogoVerano #SECCIONPANTALON .articuloPantalonesCorto .articuloPantalonesCorto__lista .card .offcanvas-body p {
+          #CatalogoVerano #SECCIONPANTALON .articuloPantalonesCorto .articuloPantalonesCorto__lista .card .card-title {
+            font-family: "Roboto" serif;
             font-size: 2rem;
-            color: #BCBCBE;
-            font-weight: 300; }
+            font-weight: 500;
+            color: #BCBCBE; }
+          #CatalogoVerano #SECCIONPANTALON .articuloPantalonesCorto .articuloPantalonesCorto__lista .card .offcanvas-title {
+            font-family: "Roboto" serif;
+            font-size: 4rem;
+            font-weight: 500;
+            color: #BCBCBE; }
+          #CatalogoVerano #SECCIONPANTALON .articuloPantalonesCorto .articuloPantalonesCorto__lista .card .offcanvas-body p {
+            font-family: sans-serif;
+            font-size: 2rem;
+            font-weight: 300;
+            color: #BCBCBE; }
 
 /* Media CATALOGO VERANO */
 @media screen and (max-width: 1000px) {
@@ -788,24 +782,22 @@ footer {
   flex-direction: column;
   justify-content: space-around;
   margin: 0 auto 6em;
-  width: 90vw;
   gap: 8em; }
   .contacto .contacto__div {
     display: flex;
-    width: 90vw;
     flex-direction: column;
-    text-align: center;
-    margin: auto; }
+    text-align: center; }
     .contacto .contacto__div .contacto__parrafo {
       width: 50%;
       height: 8em;
       text-align: center;
       padding: 1rem 0 2rem;
       margin: 2em auto 1em;
-      font-size: 3.5em;
+      font-family: sans-serif;
+      font-size: 2.5em;
+      font-weight: 300;
       color: #BCBCBE; }
     .contacto .contacto__div .contacto__contenedorQR {
-      width: 100%;
       display: flex;
       justify-content: center;
       gap: 10em; }
@@ -823,7 +815,7 @@ footer {
         width: 15rem;
         height: 17rem;
         margin: 1rem 4rem 2rem;
-        border: solid #2C2C2E 0.4em;
+        border: solid #7A7C7F 0.4em;
         transition: 0.8s; }
         .contacto .contacto__div .contacto__contenedorQR .contacto__ios:hover {
           opacity: 0.6;
@@ -840,7 +832,10 @@ footer {
   margin: 0 auto 5em;
   color: #BCBCBE !important; }
   .contacto__formularioDiv .titulo-h2-formulariocontaco {
-    font-size: 3.5em; }
+    font-family: sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #BCBCBE; }
   .contacto__formularioDiv .textarea-contacto {
     resize: none; }
 
@@ -892,7 +887,6 @@ footer {
   background-image: linear-gradient(to top, #2c2c2e, #3a3a3c, #48484b, #56575a, #65676a, #67696c, #696a6d, #6b6c6f, #606163, #565558, #4b4b4d, #414042);
   display: flex;
   flex-direction: row;
-  width: 90vw;
   height: 60em;
   margin: 0 auto 6em;
   gap: 1em; }
@@ -900,10 +894,10 @@ footer {
     width: 40%;
     margin: 10em auto 2em; }
     .Form .Form__Inicio .Form__parrafo {
-      width: 100%;
-      font-size: 2rem;
       font-family: sans-serif;
+      font-size: 2rem;
       font-weight: 300;
+      color: #BCBCBE;
       text-align: left;
       color: #BCBCBE;
       margin-bottom: 2em; }
@@ -925,20 +919,20 @@ footer {
       color: #414042;
       font-size: 1.2em; }
     .Form .Form__Inicio .Form__parrafo1 {
-      width: 100%;
       margin-top: 1.6em;
+      font-family: sans-serif;
       font-size: 1.2em;
+      font-weight: 300;
       color: #BCBCBE; }
   .Form .Form__Crear {
     width: 40%;
     margin: 10em auto 2em; }
     .Form .Form__Crear .Form__parrafo {
-      width: 100%;
-      font-size: 2rem;
       font-family: sans-serif;
+      font-size: 2rem;
       font-weight: 300;
-      text-align: left;
       color: #BCBCBE;
+      text-align: left;
       margin-bottom: 2em; }
     .Form .Form__Crear .Form__imput {
       width: 30em;

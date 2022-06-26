@@ -1,0 +1,6 @@
+@mixin estilofuente ($fontfamlily, $fontsize, $fontweight, $color, ) {
+    font-family: $fontfamlily;
+    font-size:  $fontsize;
+    font-weight: $fontweight;
+    color: $color;
+}

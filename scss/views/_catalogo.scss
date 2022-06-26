@@ -1,11 +1,6 @@
 /* CATALOGO */
 
 .seccion {
-    background-image: url(../imagenes/fondopantallacatologo.png);
-    background-size:cover;
-    background-position-y: center;
-    width: 100%;
-    margin: auto;
     display: flex;
     flex-direction: column;
 
@@ -14,16 +9,12 @@
         margin: 1em auto 0;
         text-align: center;
         color: $Letras;
-        font-family: $Titulos;
-        font-weight: $Titulo;
-        font-size: $Mediano;
+        @include estilofuente ( $Titulos, $Mediano, $Titulo, $Letras); 
     }
 
     .seccion__catalogo {
         display: flex;
         justify-content: space-between;
-        width: 90vw;
-        margin: auto;
 
         .seccion__invierno {
             display: flex;
@@ -36,10 +27,10 @@
 
             .seccion__imagen {
                 border-radius: 2em;
-                border: solid #2C2C2E 0.5em;
+                border: solid  map-get($map: $Paleta , $key: primario) 0.5em;
 
                 &__imagen:hover {
-                    border: solid #BCBCBE 0.5em;
+                    border: solid map-get($map: $Paleta , $key: letras) 0.5em;
                     opacity: 0.6;
                 }
             }
@@ -47,10 +38,7 @@
             .seccion__h2 {
                 width: 40vw;
                 margin: 0 auto 2em;
-                color: $Letras;
-                font-family: $Titulos;;
-                font-weight: $Titulo;
-                font-size: $Base;
+                @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);
                 text-align: center;
             }
         }
@@ -66,10 +54,10 @@
 
             .seccion__imagen {
                 border-radius: 2em;
-                border: solid #2C2C2E 0.5em;
+                border: solid  map-get($map: $Paleta , $key: primario) 0.5em;
 
                 &__imagen:hover {
-                    border: solid #BCBCBE 0.5em;
+                    border: solid  map-get($map: $Paleta , $key: letras) 0.5em;
                     opacity: 0.6;
                 }
             }
@@ -77,10 +65,7 @@
             .seccion__h2 {
                 width: 40vw;
                 margin: 0 auto 2em;
-                color: $Letras;
-                font-family: $Titulos;;
-                font-weight: $Titulo;
-                font-size: $Base;
+                @include estilofuente ( $Titulos, $Base, $Titulo, $Letras);
                 text-align: center;
             }
         }     
