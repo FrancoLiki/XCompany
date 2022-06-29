@@ -32,13 +32,13 @@
                 width: 15rem;
                 height: 17rem;
                 margin: 1rem 4rem 2rem;
-                border: solid  map-get($map: $Paleta , $key: primario) 0.4em;
+                border: solid  map-get($map: $Paleta , $key: secundario) 0.4em;
+                border-radius: 0.8em;
                 transition: 0.8s;
 
                 &:hover {
                     opacity: 0.6;
                     border: solid #414042 0.4em;
-                    border-radius: 0.8em;
                 }
             }
             
@@ -47,12 +47,12 @@
                 height: 17rem;
                 margin: 1rem 4rem 2rem;
                 border: solid  map-get($map: $Paleta , $key: secundario) 0.4em;
+                border-radius: 0.8em;
                 transition: 0.8s;
 
                 &:hover {
                     opacity: 0.6;
                     border: solid #414042 0.4em;
-                    border-radius: 0.8em;
                 }
             }
         }
