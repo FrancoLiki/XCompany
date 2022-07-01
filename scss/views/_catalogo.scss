@@ -1,24 +1,24 @@
 /* CATALOGO */
 
 .seccion {
-    display: flex;
-    flex-direction: column;
+    @include flex (flex, column);
 
     .seccion__h1 {
         width: 90vw;
         margin: 1em auto 0;
         text-align: center;
+        margin-bottom: 1.5em;
         color: $Letras;
         @include estilofuente ( $Titulos, $Mediano, $Titulo, $Letras); 
     }
 
     .seccion__catalogo {
-        display: flex;
+        @include flex (flex, row);
         justify-content: space-between;
 
         .seccion__invierno {
-            display: flex;
-            flex-direction: column;
+            @include flex (flex, column);
+            gap: 1.5em;
             align-items: center;
 
             .seccion__imageninvierno {
@@ -44,8 +44,8 @@
         }
 
         .seccion__verano {
-            display: flex;
-            flex-direction: column;
+            @include flex (flex, column);
+            gap: 1.5em;
             align-items: center;
 
             .seccion__imagenverano {
@@ -87,6 +87,7 @@
             .seccion__invierno {
                 flex-direction: row;
                 justify-content: center;
+                gap: 0;
 
                 .seccion__imageninvierno{
                     width: 50%;
@@ -98,6 +99,7 @@
             }
             .seccion__verano {
                 flex-direction: row;
+                gap: 0;
 
                 .seccion__imagenverano {
                     width: 50%;

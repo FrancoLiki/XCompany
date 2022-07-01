@@ -15,7 +15,7 @@
         }
 
          .home {
-            display: flex;
+            @include flex (flex, row);
             justify-content: space-between;
 
             .home__parrafo {
@@ -48,7 +48,7 @@
     }
 
     .ProductosDestacados {
-        display: flex;
+        @include flex (flex, row);
         justify-content: space-around;
         margin: 5em auto 5em;
         gap: 2em;
@@ -83,7 +83,7 @@
             }
 
         .home {
-            flex-direction: column;
+            flex-direction: column !important;
             gap: 4em;
             width: 90vw;
             margin: 0 auto 4em;
@@ -95,14 +95,13 @@
             }
 
             .home__div {
-                display: flex;
-                flex-direction: row;
+                @include flex (flex, row);
                 margin: auto;
             
                 .home__imagen {
-                    margin: 4em auto 0;
-                    width: 60px;
-                    height: 100px;
+                    margin: 4em 2em 0;
+                    width: 10em !important;
+                    height: 16em !important;
                 }    
             }
         }
@@ -113,9 +112,8 @@
     }
 
     .ProductosDestacados {
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
-        gap: 2em;
     
 
         .ProductosDestacados__div {

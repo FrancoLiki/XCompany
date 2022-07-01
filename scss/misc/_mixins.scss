@@ -4,3 +4,9 @@
     font-weight: $fontweight;
     color: $color;
 }
+
+@mixin flex ($displayflex, $flexdirection) {
+    display: $displayflex ;
+    flex-direction: $flexdirection;
+}
+

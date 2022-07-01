@@ -2,8 +2,7 @@
 
 
 #CatalogoVerano {
-    display: flex;
-    flex-direction: column;
+    @include flex (flex, column);
 
     .ListaCatalogoVerano {
         list-style: none;
@@ -18,7 +17,7 @@
         }
 
         .ListaCatalogoVerano__ul {
-            display: flex; 
+            @include flex (flex, row);
             justify-content: center;
             list-style: none;
 
@@ -56,13 +55,12 @@
     }
     
     #SECCIONREMERAS {
-        display: flex;
-        flex-direction: row;
+        @include flex (flex, row);
         justify-content: space-evenly;
     
         .articuloRemera {
             width: 50%;
-            display: flex;
+            @include flex (flex, row);
             justify-content: space-evenly;
             margin-top: 2em;
             gap: 2em;
@@ -110,13 +108,12 @@
     }
 
     #SECCIONPANTALON {
-        display: flex;
-        flex-direction: row;
+        @include flex (flex, row);
         justify-content: space-evenly;
     
         .articuloPantalonesCorto {
             width: 50%;
-            display: flex;
+            @include flex (flex, row);
             justify-content: space-evenly;
             margin-top: 2em;
             gap: 2em;
