@@ -423,7 +423,7 @@ footer {
     font-weight: 500;
     color: #BCBCBE;
     text-align: center;
-    margin: 0rem 2rem 2rem;
+    margin: 2rem 2rem 2rem;
     padding-top: 2.5rem; }
   #CatalogoInvierno #SECCIONBUZOS {
     display: flex;
@@ -575,7 +575,7 @@ footer {
       margin: auto;
       gap: 0; }
       #CatalogoInvierno #SECCIONBUZOS .articuloBuzo__lista {
-        margin: 0; }
+        margin: 0 1.5em 0 !important; }
         #CatalogoInvierno #SECCIONBUZOS .articuloBuzo__lista .articuloBuzo__imagen {
           width: 200px !important;
           height: 250px !important;
